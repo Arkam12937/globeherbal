@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Herbal Bliss</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Herbal Bliss</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <img src="https://via.placeholder.com/400x300?text=Ashwagandha" alt="Ashwagandha" id="product-image">
+            <div class="details">
+                <h1 id="product-title">Ashwagandha Capsules</h1>
+                <p id="product-description">Ashwagandha, also known as Indian ginseng, is a powerful adaptogen that helps reduce stress, anxiety, and fatigue. Our capsules are made from organic roots for maximum potency.</p>
+                <p><strong>Price:</strong> $19.99</p>
+                <a href="contact.html" class="btn">Contact to Order</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Herbal Bliss. All rights reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/1234567890?text=Hello%20Herbal%20Bliss!" class="whatsapp-btn" target="_blank">💬</a>
+    <a href="tel:+1234567890" class="call-btn">📞</a>
+
+    <script src="script.js"></script>
+    <script>
+        // Simple script to update product details based on URL param (for demo)
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+        if (id === '2') {
+            document.getElementById('product-image').src = 'https://via.placeholder.com/400x300?text=Turmeric';
+            document.getElementById('product-title').textContent = 'Turmeric Powder';
+            document.getElementById('product-description').textContent = 'Turmeric is renowned for its curcumin content, offering anti-inflammatory benefits. Our powder is pure and organic.';
+        } else if (id === '3') {
+            document.getElementById('product-image').src = 'https://via.placeholder.com/400x300?text=Tulsi';
+            document.getElementById('product-title').textContent = 'Tulsi Tea';
+            document.getElementById('product-description').textContent = 'Holy basil tea supports respiratory health and immunity. Brew a cup for daily wellness.';
+        }
+    </script>
+</body>
+</html>
