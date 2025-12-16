@@ -65,3 +65,31 @@ footer {
   text-align: center;
   padding: 15px;
 }
+.banner {
+  background: url("images/banner.jpg") center/cover no-repeat;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.banner h1 {
+  font-size: 42px;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-top: 10px;
+  background: rgba(0,0,0,0.5);
+  padding: 6px 15px;
+  border-radius: 6px;
+}
+
+
+
