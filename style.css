@@ -90,6 +90,36 @@ footer {
   padding: 6px 15px;
   border-radius: 6px;
 }
+/* ===== BANNER ===== */
+.banner {
+  background-image: url("images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text {
+  background: rgba(0,0,0,0.55);
+  padding: 20px 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.banner-text h1 {
+  color: #fff;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  color: #f1f1f1;
+  font-size: 18px;
+}
+
+
 
 
 
